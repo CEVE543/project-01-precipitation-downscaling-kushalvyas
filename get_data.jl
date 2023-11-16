@@ -84,7 +84,9 @@ function download_single_level_data(
     variable::AbstractString;
     hours=0:23,
     resolution=1.0,
-    bbox=[50, -130, 24, -65],
+    # bbox=[50, -130, 24, -65],
+    bbox = [36.75, 269.75, 25.25, 258.25],
+    # bbox = [30, -96, 28, -94 ],
 )
     if isfile(filename)
         println("File $filename already exists. Skipping download.")
@@ -144,7 +146,9 @@ function download_pressure_level_data(
     level::Int;
     hours=0:23,
     resolution=1.0,
-    bbox=[50, -130, 24, -65],
+    # bbox=[50, -130, 24, -65],
+    bbox = [36.75, 269.75, 25.25, 258.25],
+    # bbox = [30, -96, 28, -94 ],
 )
     if isfile(filename)
         println("File $filename already exists. Skipping download.")
